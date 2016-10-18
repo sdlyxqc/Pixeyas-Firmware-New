@@ -58,6 +58,8 @@ unset FRC
 
 if [ $MODE == autostart ]
 then
+	# Start a USB console
+	nshterm /dev/ttyACM0 &
 
 	#
 	# Start the ORB (first app to start)
@@ -654,7 +656,9 @@ then
 	fi
 
 	# Start MAVLink
-	mavlink start -r 800000 -d /dev/ttyACM0 -m config -x
+        # Commented out by Xiaoke, since we do not need mavlink on ttyACM0
+        # rather we need an nsh terminal on ttyACM0
+	# mavlink start -r 800000 -d /dev/ttyACM0 -m config -x
 
 	#
 	# Logging
@@ -949,3 +953,7 @@ then
 	exit
 fi
 unset EXIT_ON_END
+
+# Start mavlink on /dev/ttyS2 where the ESP8266 wifi module is connected.
+mavlink start -r 20000 -m config -b 921600 -d /dev/ttyS2
+

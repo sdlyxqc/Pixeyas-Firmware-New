@@ -2099,7 +2099,7 @@ PARAM_DEFINE_INT32(RC_TH_USER, 1);
  * @value 18 Channel 18
  * @group Radio Calibration
  */
-PARAM_DEFINE_INT32(RC_MAP_ROLL, 0);
+PARAM_DEFINE_INT32(RC_MAP_ROLL, 1);
 
 /**
  * Pitch control channel mapping.
@@ -2131,7 +2131,7 @@ PARAM_DEFINE_INT32(RC_MAP_ROLL, 0);
  * @value 18 Channel 18
  * @group Radio Calibration
  */
-PARAM_DEFINE_INT32(RC_MAP_PITCH, 0);
+PARAM_DEFINE_INT32(RC_MAP_PITCH, 2);
 
 /**
  * Failsafe channel mapping.
@@ -2162,7 +2162,7 @@ PARAM_DEFINE_INT32(RC_MAP_PITCH, 0);
  * @value 17 Channel 17
  * @value 18 Channel 18
  */
-PARAM_DEFINE_INT32(RC_MAP_FAILSAFE, 0);  //Default to throttle function
+PARAM_DEFINE_INT32(RC_MAP_FAILSAFE, 3);  //Default to throttle function
 
 /**
  * Throttle control channel mapping.
@@ -2194,7 +2194,7 @@ PARAM_DEFINE_INT32(RC_MAP_FAILSAFE, 0);  //Default to throttle function
  * @value 18 Channel 18
  * @group Radio Calibration
  */
-PARAM_DEFINE_INT32(RC_MAP_THROTTLE, 0);
+PARAM_DEFINE_INT32(RC_MAP_THROTTLE, 4);
 
 /**
  * Yaw control channel mapping.
@@ -2226,7 +2226,7 @@ PARAM_DEFINE_INT32(RC_MAP_THROTTLE, 0);
  * @value 18 Channel 18
  * @group Radio Calibration
  */
-PARAM_DEFINE_INT32(RC_MAP_YAW, 0);
+PARAM_DEFINE_INT32(RC_MAP_YAW, 5);
 
 /**
  * Single channel flight mode selection
@@ -2257,7 +2257,7 @@ PARAM_DEFINE_INT32(RC_MAP_YAW, 0);
  * @value 17 Channel 17
  * @value 18 Channel 18
  */
-PARAM_DEFINE_INT32(RC_MAP_FLTMODE, 0);
+PARAM_DEFINE_INT32(RC_MAP_FLTMODE, 6);
 
 /**
  * Mode switch channel mapping.
@@ -2290,7 +2290,7 @@ PARAM_DEFINE_INT32(RC_MAP_FLTMODE, 0);
  * @value 17 Channel 17
  * @value 18 Channel 18
  */
-PARAM_DEFINE_INT32(RC_MAP_MODE_SW, 0);
+PARAM_DEFINE_INT32(RC_MAP_MODE_SW, 7);
 
 /**
  * Return switch channel
@@ -2318,7 +2318,7 @@ PARAM_DEFINE_INT32(RC_MAP_MODE_SW, 0);
  * @value 17 Channel 17
  * @value 18 Channel 18
  */
-PARAM_DEFINE_INT32(RC_MAP_RETURN_SW, 0);
+PARAM_DEFINE_INT32(RC_MAP_RETURN_SW, 8);
 
 /**
  * Rattitude switch channel
@@ -2346,7 +2346,7 @@ PARAM_DEFINE_INT32(RC_MAP_RETURN_SW, 0);
  * @value 17 Channel 17
  * @value 18 Channel 18
  */
-PARAM_DEFINE_INT32(RC_MAP_RATT_SW, 0);
+PARAM_DEFINE_INT32(RC_MAP_RATT_SW, 9);
 
 /**
  * Position Control switch channel
@@ -2374,7 +2374,7 @@ PARAM_DEFINE_INT32(RC_MAP_RATT_SW, 0);
  * @value 17 Channel 17
  * @value 18 Channel 18
  */
-PARAM_DEFINE_INT32(RC_MAP_POSCTL_SW, 0);
+PARAM_DEFINE_INT32(RC_MAP_POSCTL_SW, 10);
 
 /**
  * Loiter switch channel
@@ -2402,7 +2402,7 @@ PARAM_DEFINE_INT32(RC_MAP_POSCTL_SW, 0);
  * @value 17 Channel 17
  * @value 18 Channel 18
  */
-PARAM_DEFINE_INT32(RC_MAP_LOITER_SW, 0);
+PARAM_DEFINE_INT32(RC_MAP_LOITER_SW, 11);
 
 /**
  * Acro switch channel
@@ -2430,7 +2430,7 @@ PARAM_DEFINE_INT32(RC_MAP_LOITER_SW, 0);
  * @value 17 Channel 17
  * @value 18 Channel 18
  */
-PARAM_DEFINE_INT32(RC_MAP_ACRO_SW, 0);
+PARAM_DEFINE_INT32(RC_MAP_ACRO_SW, 12);
 
 /**
  * Offboard switch channel
@@ -2458,7 +2458,7 @@ PARAM_DEFINE_INT32(RC_MAP_ACRO_SW, 0);
  * @value 17 Channel 17
  * @value 18 Channel 18
  */
-PARAM_DEFINE_INT32(RC_MAP_OFFB_SW, 0);
+PARAM_DEFINE_INT32(RC_MAP_OFFB_SW, 13);
 
 /**
  * Kill switch channel
@@ -2486,7 +2486,7 @@ PARAM_DEFINE_INT32(RC_MAP_OFFB_SW, 0);
  * @value 17 Channel 17
  * @value 18 Channel 18
  */
-PARAM_DEFINE_INT32(RC_MAP_KILL_SW, 0);
+PARAM_DEFINE_INT32(RC_MAP_KILL_SW, 14);
 
 /**
  * Flaps channel
@@ -2514,7 +2514,7 @@ PARAM_DEFINE_INT32(RC_MAP_KILL_SW, 0);
  * @value 17 Channel 17
  * @value 18 Channel 18
  */
-PARAM_DEFINE_INT32(RC_MAP_FLAPS, 0);
+PARAM_DEFINE_INT32(RC_MAP_FLAPS, 15);
 
 /**
  * VTOL transition switch channel mapping
@@ -2542,7 +2542,7 @@ PARAM_DEFINE_INT32(RC_MAP_FLAPS, 0);
  * @value 17 Channel 17
  * @value 18 Channel 18
  */
-PARAM_DEFINE_INT32(RC_MAP_TRANS_SW, 0);
+PARAM_DEFINE_INT32(RC_MAP_TRANS_SW, 16);
 
 /**
  * AUX1 Passthrough RC Channel

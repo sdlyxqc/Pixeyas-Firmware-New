@@ -513,7 +513,7 @@ then
 		fi
 	fi
 
-	if [ $MAVLINK_F == "none" ]
+	if [ "x$MAVLINK_F" == xnone ]
 	then
 	else
 		mavlink start $MAVLINK_F
@@ -644,6 +644,12 @@ then
 	fi
 
 	if ver hwcmp PX4FMU_V2
+	then
+		# Check for flow sensor - as it is a background task, launch it last
+		px4flow start &
+	fi
+
+	if ver hwcmp PX4FMU_V4
 	then
 		# Check for flow sensor - as it is a background task, launch it last
 		px4flow start &
